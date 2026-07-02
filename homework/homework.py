@@ -96,26 +96,6 @@
 # {'type': 'cm_matrix', 'dataset': 'test', 'true_0': {"predicted_0": 15562, "predicte_1": 650}, 'true_1': {"predicted_0": 2490, "predicted_1": 1420}}
 #
 
-
-# flake8: noqa: E501
-"""
-Laboratorio 10 - Predicción de default usando regresión logística.
-
-Este script implementa el pipeline completo pedido en el enunciado:
-
-  1. Limpieza de los datasets.
-  2. División en x_train, y_train, x_test, y_test.
-  3. Pipeline de clasificación (OneHotEncoder + MinMaxScaler + SelectKBest +
-     LogisticRegression).
-  4. Optimización de hiperparámetros con GridSearchCV (10 folds,
-     balanced_accuracy).
-  5. Guardado del modelo comprimido con gzip.
-  6. Cálculo de métricas de precisión, precisión balanceada, recall y f1.
-  7. Cálculo de matrices de confusión.
-
-Ejecútalo desde la raíz del repositorio (donde vive la carpeta "files/").
-"""
-
 import gzip
 import json
 import os
